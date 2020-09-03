@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Main-Class: com.qy.hnbt.data.DataApplication
+Class-Path: spring-jdbc-5.2.8.RELEASE.jar jackson-datatype-jsr310-2.11.2
+ .jar commons-codec-1.14.jar spring-boot-starter-logging-2.3.3.RELEASE.j
+ ar spring-aop-5.2.8.RELEASE.jar mybatis-plus-boot-starter-3.3.2.jar jac
+ kson-module-parameter-names-2.11.2.jar poi-ooxml-3.17.jar mysql-connect
+ or-java-8.0.21.jar mybatis-plus-annotation-3.3.2.jar byte-buddy-1.10.14
+ .jar commons-collections4-4.1.jar log4j-api-2.13.3.jar cglib-3.1.jar ja
+ ckson-datatype-jdk8-2.11.2.jar curvesapi-1.04.jar logback-core-1.2.3.ja
+ r snakeyaml-1.26.jar jsqlparser-3.1.jar spring-web-5.2.8.RELEASE.jar h2
+ -1.4.200.jar jul-to-slf4j-1.7.30.jar spring-boot-starter-aop-2.3.3.RELE
+ ASE.jar HikariCP-3.4.5.jar spring-context-5.2.8.RELEASE.jar springfox-s
+ wagger-ui-2.9.2.jar springfox-spring-web-2.9.2.jar xmlbeans-2.6.0.jar c
+ lassmate-1.5.1.jar spring-expression-5.2.8.RELEASE.jar aspectjweaver-1.
+ 9.6.jar spring-jcl-5.2.8.RELEASE.jar mybatis-plus-extension-3.3.2.jar s
+ pringfox-swagger2-2.9.2.jar lombok-1.18.12.jar poi-ooxml-schemas-3.17.j
+ ar jackson-core-2.11.2.jar tomcat-embed-core-9.0.37.jar spring-boot-sta
+ rter-2.3.3.RELEASE.jar freemarker-2.3.30.jar spring-tx-5.2.8.RELEASE.ja
+ r spring-boot-autoconfigure-2.3.3.RELEASE.jar springfox-core-2.9.2.jar 
+ jackson-annotations-2.11.2.jar spring-boot-starter-json-2.3.3.RELEASE.j
+ ar spring-beans-5.2.8.RELEASE.jar spring-plugin-metadata-1.2.0.RELEASE.
+ jar tomcat-embed-websocket-9.0.37.jar dynamic-datasource-spring-boot-st
+ arter-2.5.4.jar mybatis-plus-3.3.2.jar swagger-models-1.6.0.jar spring-
+ webmvc-5.2.8.RELEASE.jar spring-boot-starter-web-2.3.3.RELEASE.jar spri
+ ngfox-swagger-common-2.9.2.jar jackson-databind-2.11.2.jar spring-boot-
+ 2.3.3.RELEASE.jar springfox-schema-2.9.2.jar stax-api-1.0.1.jar mybatis
+ -spring-2.0.4.jar easyexcel-1.1.2-beta5.jar logback-classic-1.2.3.jar s
+ pring-boot-starter-tomcat-2.3.3.RELEASE.jar mybatis-3.5.4.jar log4j-to-
+ slf4j-2.13.3.jar spring-boot-starter-jdbc-2.3.3.RELEASE.jar mapstruct-1
+ .2.0.Final.jar jakarta.annotation-api-1.3.5.jar swagger-annotations-1.6
+ .0.jar springfox-spi-2.9.2.jar asm-4.2.jar mybatis-plus-generator-3.3.2
+ .jar spring-core-5.2.8.RELEASE.jar spring-plugin-core-1.2.0.RELEASE.jar
+  slf4j-api-1.7.30.jar poi-3.17.jar guava-20.0.jar jakarta.el-3.0.3.jar 
+ mybatis-plus-core-3.3.2.jar
+

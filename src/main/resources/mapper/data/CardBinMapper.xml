@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qy.hnbt.data.mapper.CardBinMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.qy.hnbt.data.entity.CardBin">
+        <id column="id" property="id" />
+        <result column="bin_code" property="binCode" />
+        <result column="card_name" property="cardName" />
+        <result column="bank_set_id" property="bankSetId" />
+        <result column="create_time" property="createTime" />
+        <result column="owner" property="owner" />
+        <result column="length" property="length" />
+        <result column="type" property="type" />
+        <result column="bin_length" property="binLength" />
+    </resultMap>
+
+</mapper>

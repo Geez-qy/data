@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qy.hnbt.data.mapper.SubsidyItemNewMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.qy.hnbt.data.entity.SubsidyItemNew">
+        <id column="id" property="id" />
+        <result column="receiver_account_name" property="receiverAccountName" />
+        <result column="receiver_account_no" property="receiverAccountNo" />
+        <result column="receiver_bank_name" property="receiverBankName" />
+        <result column="receiver_bank_code" property="receiverBankCode" />
+        <result column="receiver_idn" property="receiverIdn" />
+        <result column="money" property="money" />
+        <result column="tran_amt" property="tranAmt" />
+        <result column="main_id" property="mainId" />
+        <result column="tran_id" property="tranId" />
+        <result column="tran_time" property="tranTime" />
+        <result column="tran_status" property="tranStatus" />
+        <result column="yl_no" property="ylNo" />
+        <result column="verify_status" property="verifyStatus" />
+        <result column="verify_time" property="verifyTime" />
+        <result column="verify_money" property="verifyMoney" />
+        <result column="remark" property="remark" />
+        <result column="status" property="status" />
+        <result column="showing_status" property="showingStatus" />
+        <result column="msg" property="msg" />
+        <result column="code_level" property="codeLevel" />
+        <result column="msg_time" property="msgTime" />
+        <result column="addr" property="addr" />
+        <result column="contact_detail" property="contactDetail" />
+        <result column="bank_set_id" property="bankSetId" />
+    </resultMap>
+
+</mapper>

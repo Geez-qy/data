@@ -1,0 +1,45 @@
+url: '139.9.85.73:29806'
+username: 'root'
+password: '!Yunyang123'
+spring:
+  datasource:
+    dynamic:
+      primary: db1 #设置默认的数据源或者数据源组,默认值即为master，如果读者只是单数据源只需要注释掉slave相关配置即可，这里为了方便演示master与slave保持相同
+      strict: false
+      datasource:
+        hnbt:
+          url: jdbc:mysql://${url}/hnbt?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        hnbt_451026:
+          url: jdbc:mysql://${url}/hnbt_451026?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        hnbt_451027:
+          url: jdbc:mysql://${url}/hnbt_451027?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        hnbt_451022:
+          url: jdbc:mysql://${url}/hnbt_451022?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        yypay_451026:
+          url: jdbc:mysql://${url}/yypay_v1_451026?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        yypay_451027:
+          url: jdbc:mysql://${url}/yypay_v1_451027?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        yypay_451022:
+          url: jdbc:mysql://${url}/yypay_v1_451022?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+

@@ -1,0 +1,30 @@
+url: 139.159.236.239
+username: 'root'
+password: 'Yunyang123'
+spring:
+  datasource:
+    dynamic:
+      primary: 'master' #设置默认的数据源或者数据源组,默认值即为master，如果读者只是单数据源只需要注释掉slave相关配置即可，这里为了方便演示master与slave保持相同
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://${url}:3307/hnbt?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        hnbt_451026:
+          url: jdbc:mysql://${url}:3307/hnbt_451026?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        hnbt_451027:
+          url: jdbc:mysql://${url}:3307/hnbt_451027?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        hnbt_451022:
+          url: jdbc:mysql://${url}:3307/hnbt_451022?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+

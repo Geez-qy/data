@@ -1,0 +1,33 @@
+username: mpw:3GRWX0QjVXttDcdJxNAJDw==
+password: mpw:oPZBUk8IuPrr235Mig8TsQ==
+spring:
+  datasource:
+    dynamic:
+      primary: db1 #设置默认的数据源或者数据源组,默认值即为master，如果读者只是单数据源只需要注释掉slave相关配置即可，这里为了方便演示master与slave保持相同
+      strict: false
+      datasource:
+        db0:
+          url: mpw:XLXeN3KU7HhQsHA9J6Co4OigeLf55tRkVD0oA3z02qGbMJVGl1li3aKIJVis3gc9cbkuQ1PFy1aXrFqc33JpOlKX1VwOwVt+ZKtNuh47zadgGq2hou/jQeY4SLIjJUhwBs2dWMIwpWIY9ISIxVfTeQ==
+          username: ${username}
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        db1:
+          url: mpw:XLXeN3KU7HhQsHA9J6Co4OigeLf55tRkVD0oA3z02qFnLdk8meVQp4MSXuFhWLDSvJfLvWYSd27bcUa7+FRENJqfcTs7VSpmZhBl5fXX8E7lr+rZfUzheAUpnQllwI0P0xgdxjSBNQn8OFRdWIcSBE+Q9Yvg97JVhBtNQs5Oxfk=
+          username: ${username}
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        db2:
+          url: mpw:XLXeN3KU7HhQsHA9J6Co4OigeLf55tRkVD0oA3z02qEgOszQbpmbnSLHI84t/E3bGpd2C1ePBxi8CRDP2DEegBXbx2RyTE6okLm50slX4FeKdaUR+t9L797VP+nPGqmbcuKBckLWYeLwcADFkbKHYrnSC2m1lXexnIpQtQ5VzeI=
+          username: ${username}
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        db3:
+          url: mpw:XLXeN3KU7HhQsHA9J6Co4OigeLf55tRkVD0oA3z02qGxjvmLt3oz8z58RqgA0YCwvSEnd5ZD/zGaNaaCEXPzD4bWU/TGMS0Ubfal3tYUkq8wICL2wPtPfEcKoOHjTW9PuRSQSx7Cne1QHXkBLhXcs9eFlgwjmLUbx9qOvfkv4ZQ=
+          username: ${username}
+          password: ${password}
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
